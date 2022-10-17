@@ -3,7 +3,7 @@
  * All rights reserved.
  */
 
-import {CustomSSEEvent, SSEOptions} from "../types";
+import {CustomSSEEvent, SSEOptions} from "./types";
 
 export class SSE {
     private readonly url: string;
