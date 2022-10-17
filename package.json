@@ -1,14 +1,16 @@
 {
-  "name": "sse.js",
-  "version": "0.6.1",
+  "name": "@danushka96/sse",
+  "version": "0.7.0",
   "description": "A flexible Server-Sent Events source; supports POST requests and custom headers",
-  "main": "./lib/sse.js",
+  "main": "src/index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "shx rm -rf _bundles lib lib-esm",
+    "build": "npm run clean && tsc && tsc -m es6 --outDir lib-esm && webpack"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mpetazzoni/sse.js"
+    "url": "git+https://github.com/danushka96/sse.ts.git"
   },
   "keywords": [
     "sse",
@@ -16,10 +18,23 @@
     "server-sent-events",
     "eventsource"
   ],
-  "author": "Maxime Petazzoni <maxime.petazzoni@bulix.org> (https://www.bulix.org)",
+  "author": "Danushka <danushka@klass.lk> (https://danushka96.github.io)",
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/mpetazzoni/sse.js/issues"
   },
-  "homepage": "https://github.com/mpetazzoni/sse.js"
+  "homepage": "https://github.com/danushka96/sse.ts",
+  "directories": {
+    "lib": "lib"
+  },
+  "devDependencies": {
+    "awesome-typescript-loader": "^5.2.1",
+    "gts": "^3.1.0",
+    "shx": "^0.3.4",
+    "ts-loader": "^9.3.1",
+    "typescript": "^4.3.5",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^5.46.0",
+    "webpack-cli": "^4.10.0"
+  }
 }
