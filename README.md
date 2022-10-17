@@ -1,6 +1,6 @@
-# sse.js
+# sse.ts
 
-`sse.js` is a flexible `EventSource` replacement for JavaScript designed
+`sse.ts` is a flexible `EventSource` replacement for JavaScript designed
 to consume Server-Sent Events (SSE) streams with more control and
 options than the standard `EventSource`. The main limitations of
 `EventSource` are that it only supports no-payload GET requests, and
