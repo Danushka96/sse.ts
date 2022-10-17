@@ -137,8 +137,5 @@ Standard](https://fetch.spec.whatwg.org/#concept-request-credentials-mode).
 
 ## TODOs and caveats
 
-- Internet Explorer 11 does not support arbitrary values in
-  `CustomEvent`s.  A dependency on `custom-event-polyfill` is necessary
-  for IE11 compatibility.
 - Improve `XmlHttpRequest` error handling and connection states
 - Automatically reconnect with `Last-Event-ID`
